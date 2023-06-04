@@ -17,7 +17,7 @@ if [[ $FILE = "" ]]; then
 	echo \# 已取消传输
 else
 	cd "$FILE"
-	/opt/homebrew/bin/rz -E -e -b --bufsize 4096
+	/opt/homebrew/bin/rz -E -e -b --bufsize 4096 2> /dev/null
 	sleep 1
 	echo
 	echo

@@ -15,7 +15,7 @@ if [[ $FILE = "" ]]; then
 	echo
 	echo \# 已取消传输
 else
-	/opt/homebrew/bin/sz "$FILE" --escape --binary --bufsize 4096
+	/opt/homebrew/bin/sz "$FILE" --escape --binary --bufsize 4096 2> /dev/null
 	sleep 1
 	echo
 	echo \# 已接收 $FILE
